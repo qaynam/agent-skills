@@ -1,0 +1,21 @@
+{
+  "name": "qaynam-agent-skills",
+  "owner": {
+    "name": "qaynam"
+  },
+  "metadata": {
+    "description": "qaynam's Agent Skills for Claude Code, Claude.ai, and compatible tools (Cursor, Codex, etc.)",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "self-documenting-code",
+      "description": "コードのコメント・命名・JSDoc/TSDoc/API ドキュメントに関する規約スキル",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/self-documenting-code"
+      ]
+    }
+  ]
+}
