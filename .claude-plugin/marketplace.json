@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "qaynam's Agent Skills for Claude Code, Claude.ai, and compatible tools (Cursor, Codex, etc.)",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -13,9 +13,14 @@
       "description": "コードのコメント・命名・JSDoc/TSDoc/API ドキュメントに関する規約スキル",
       "source": "./",
       "strict": false,
-      "skills": [
-        "./skills/self-documenting-code"
-      ]
+      "skills": ["./skills/self-documenting-code"]
+    },
+    {
+      "name": "github-pull-request-guide",
+      "description": "GithubのPullRequestの出し方に関する規約スキル",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/github-pull-request-guide"]
     }
   ]
 }
